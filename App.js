@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import Constants from 'expo-constants';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import BouncyCheckbox from "react-native-bouncy-checkbox";
 
 export default function App() {
   
@@ -32,6 +33,8 @@ export default function App() {
     {id: 0, serie: 'Harley Queen'},
   ]);
   
+  const [checkboxState, setCheckboxState] = useState(true);
+
   return (
     <ScrollView style={styles.scroll}>
       <View style={styles.container}>
@@ -41,49 +44,112 @@ export default function App() {
         <View style={styles.card}>
           <Text style={styles.cardTitle}>Domingo</Text>
           {seriesDom.map(function(val){
-            return(<Text>{val.serie}</Text>);
+            return(
+            <View style={styles.item}>
+              <BouncyCheckbox 
+                fillColor='deepskyblue'
+                isChecked={checkboxState} 
+                onPress={() => setCheckboxState(!checkboxState)}
+              />
+              <Text style={styles.texto}>{val.serie}</Text>
+            </View>
+            );
           })}
         </View>
 
         <View style={styles.card}>
           <Text style={styles.cardTitle}>Segunda</Text>
           {seriesSeg.map(function(val){
-            return(<Text>{val.serie}</Text>);
+            return(
+              <View style={styles.item}>
+                <BouncyCheckbox 
+                  fillColor='deepskyblue'
+                  isChecked={checkboxState} 
+                  onPress={() => setCheckboxState(!checkboxState)}
+                />
+                <Text style={styles.texto}>{val.serie}</Text>
+              </View>
+              );
           })}
         </View>
 
         <View style={styles.card}>
           <Text style={styles.cardTitle}>Terça</Text>
           {seriesTer.map(function(val){
-            return(<Text>{val.serie}</Text>);
+            return(
+              <View style={styles.item}>
+                <BouncyCheckbox 
+                  fillColor='deepskyblue'
+                  isChecked={checkboxState} 
+                  onPress={() => setCheckboxState(!checkboxState)}
+                />
+                <Text style={styles.texto}>{val.serie}</Text>
+              </View>
+              );
           })}
         </View>
 
         <View style={styles.card}>
           <Text style={styles.cardTitle}>Quarta</Text>
           {seriesQua.map(function(val){
-            return(<Text>{val.serie}</Text>);
+            return(
+              <View style={styles.item}>
+                <BouncyCheckbox 
+                  fillColor='deepskyblue'
+                  isChecked={checkboxState} 
+                  onPress={() => setCheckboxState(!checkboxState)}
+                />
+                <Text style={styles.texto}>{val.serie}</Text>
+              </View>
+              );
           })}
         </View>
 
         <View style={styles.card}>
           <Text style={styles.cardTitle}>Quinta</Text>
           {seriesQui.map(function(val){
-            return(<Text>{val.serie}</Text>);
+            return(
+              <View style={styles.item}>
+                <BouncyCheckbox 
+                  fillColor='deepskyblue'
+                  isChecked={checkboxState} 
+                  onPress={() => setCheckboxState(!checkboxState)}
+                />
+                <Text style={styles.texto}>{val.serie}</Text>
+              </View>
+              );
           })}
         </View>
 
         <View style={styles.card}>
           <Text style={styles.cardTitle}>Sexta</Text>
           {seriesSex.map(function(val){
-            return(<Text>{val.serie}</Text>);
+            return(
+              <View style={styles.item}>
+                <BouncyCheckbox 
+                  fillColor='deepskyblue'
+                  isChecked={checkboxState} 
+                  onPress={() => setCheckboxState(!checkboxState)}
+                />
+                <Text style={styles.texto}>{val.serie}</Text>
+              </View>
+              );
           })}
         </View>
 
         <View style={styles.card}>
           <Text style={styles.cardTitle}>Sábado</Text>
           {seriesSab.map(function(val){
-            return(<Text>{val.serie}</Text>);
+            return(
+              <View style={styles.item}>
+                <BouncyCheckbox 
+                  fillColor='deepskyblue'
+                  isChecked={checkboxState} 
+                  onPress={() => setCheckboxState(!checkboxState)}
+                />
+                <Text style={styles.texto}>{val.serie}</Text>
+              </View>
+              );
           })}
         </View>
 
@@ -127,4 +193,14 @@ const styles = StyleSheet.create({
     fontSize: 18,
     marginBottom: 5,
   },
+  item:{
+    flex: 1,
+    flexDirection: 'row',
+    alignContent: 'center',
+    justifyContent: 'center',
+    marginBottom: 5,
+  },
+  texto:{
+    textAlignVertical: 'center',
+  }
 });
