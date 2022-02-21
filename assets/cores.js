@@ -1,0 +1,15 @@
+export const Cores = {
+  white: "#fff",
+  black: "#000",
+  quicksilver: "#a9a29c",
+  blackcoffee: "#342727",
+  smokyblack: "#170b07",
+  coyotebrown: "#81662c",
+  inchworm: "#a9ee6d",
+  yellowgreencrayola: "#b6d66d",
+  smokyblack2: "#21120d",
+  tangerine: "#e98213",
+  bone: "#e5ded3",
+  cinereous: "#917c75",
+  darkliver: "#574d4b",
+};
