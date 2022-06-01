@@ -1,0 +1,22 @@
+{
+  "files": {
+    "app.js": "/Serializador/static/js/app.68b5bca3.chunk.js",
+    "app.js.map": "/Serializador/static/js/app.68b5bca3.chunk.js.map",
+    "runtime~app.js": "/Serializador/static/js/runtime~app.c4dd1c58.js",
+    "runtime~app.js.map": "/Serializador/static/js/runtime~app.c4dd1c58.js.map",
+    "static/js/2.5201efbf.chunk.js": "/Serializador/static/js/2.5201efbf.chunk.js",
+    "static/js/2.5201efbf.chunk.js.map": "/Serializador/static/js/2.5201efbf.chunk.js.map",
+    "favicon-16.png": "/Serializador/favicon-16.png",
+    "favicon-32.png": "/Serializador/favicon-32.png",
+    "favicon.ico": "/Serializador/favicon.ico",
+    "index.html": "/Serializador/index.html",
+    "manifest.json": "/Serializador/manifest.json",
+    "serve.json": "/Serializador/serve.json",
+    "static/js/2.5201efbf.chunk.js.LICENSE.txt": "/Serializador/static/js/2.5201efbf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.c4dd1c58.js",
+    "static/js/2.5201efbf.chunk.js",
+    "static/js/app.68b5bca3.chunk.js"
+  ]
+}
